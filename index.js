@@ -1,7 +1,3 @@
-
-
-
-// Animação de entrada dos ícones
 document.querySelectorAll('.icon').forEach((icon, index) => {
     icon.style.opacity = 0;
     icon.style.transform = 'scale(0.5)';
@@ -13,7 +9,6 @@ document.querySelectorAll('.icon').forEach((icon, index) => {
 });
 
 
-// Efeito pulse ao hover nos botões
 document.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('mouseenter', () => {
         btn.classList.add('pulse');
@@ -23,7 +18,6 @@ document.querySelectorAll('button').forEach(btn => {
     });
 });
 
-// Scroll suave para âncoras (caso adicione no futuro)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
