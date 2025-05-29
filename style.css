@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background: #626BBA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+main {
+    z-index: 1;
+    background-color: white;
+    width: 90vw;
+    max-width: 480px;
+    padding: 6vh 6vw;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.5s ease-in-out, float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-1.2vh); }
+    100% { transform: translateY(0); }
+}
+
+h1 {
+    font-size: clamp(2rem, 10vw, 4rem);
+    color: #626BBA;
+    margin-bottom: 2vh;
+    line-height: 1;
+}
+
+main > section > p {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+    color: #626BBA;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    font-size: 1.2rem;
+}
+
+.desc {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    color: #737373;
+    margin-bottom: 4vh;
+}
+
+#secbtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh 4vw;
+    margin-bottom: 4vh;
+}
+
+#secbtn article {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+button {
+    background-color: white;
+    color: #626BBA;
+    border: 2px solid #626BBA;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 35vw;
+    max-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #626BBA;
+    color: white;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.icon {
+    width: clamp(1.2rem, 6vw, 2rem);
+    height: clamp(1.2rem, 6vw, 2rem);
+    fill: #9370DB;
+    transition: fill 0.3s ease;
+}
+
+button:hover .icon {
+    fill: white;
+}
+
+.logo {
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 2vh;
+}
+
+#copy {
+    font-size: clamp(0.7rem, 3vw, 0.9rem);
+    color: #999;
+}
+
+@media (min-width: 768px) {
+   button{
+ min-width: 30vw;
+    }
+}
