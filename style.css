@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+}   
 
 header {
     display: flex;
@@ -109,7 +109,7 @@ main button {
 button:hover {
     background-color: #626bba8f;
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 button:active {
