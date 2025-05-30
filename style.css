@@ -4,15 +4,27 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+body {
+
     font-family: 'Inter', sans-serif;
     background: #626BBA;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    padding: 3vh;
+}
+
+header img {
+    width: 25%;
+
 }
 
 main {
@@ -28,15 +40,18 @@ main {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-1.2vh); }
-    100% { transform: translateY(0); }
-}
+
 
 h1 {
     font-size: clamp(2rem, 10vw, 4rem);
@@ -45,13 +60,14 @@ h1 {
     line-height: 1;
 }
 
-main > section > p {
+main>section>p {
     font-size: clamp(1rem, 5vw, 1.8rem);
     color: #626BBA;
     font-weight: 400;
     margin-bottom: 2vh;
     font-size: 1.2rem;
 }
+
 
 .desc {
     font-size: clamp(0.9rem, 4vw, 1.2rem);
@@ -73,7 +89,7 @@ main > section > p {
     gap: 2vh;
 }
 
-button {
+main button {
     background-color: white;
     color: #626BBA;
     border: 2px solid #626BBA;
@@ -87,7 +103,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0.4rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
@@ -121,11 +137,77 @@ button:active {
 }
 
 @media (min-width: 768px) {
-   button{
- min-width: 30vw;
+    button {
+        min-width: 30vw;
     }
 }
 
-figcaption{
+figcaption {
     display: none;
+}
+
+
+div h1 {
+    color: white;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+
+div p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+#sobrenos {
+    padding: 5vw;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#btnlink {
+    background-color: #b5b8d0;
+    width: 100%;
+    color: rgb(95, 95, 95);
+    font-weight: 500;
+
+}
+
+#aemail {
+    text-decoration: none;
+    width: 100%;
+}
+
+#aemail button {
+    width: 100%;
+
+}
+
+#aemail img {
+    width: 2vh;
+    height: 2vh;
+}
+
+div button {
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0.6vh;
+    gap: 10px;
+
+}
+
+#nossosmembros p {
+    margin-bottom: 10px;
+}
+
+#nossosmembros h1 {
+    font-size: 2rem;
 }
